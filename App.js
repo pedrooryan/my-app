@@ -3,27 +3,13 @@ import { View, Text, Image, TouchableOpacity, StyleSheet} from "react-native";
 
 const App = () => {
   const frases = [
-  "''A vida é como um labirinto sem saída, você sempre encontrará um beco sem saída.''",
-    "''Não importa o quanto você tente, o fracasso sempre será a única constante.''",
-    "''A única certeza na vida é que tudo está destinado a dar errado.''",
-    "''Sonhar grande? Mais como sonhar para se decepcionar ainda mais.''",
-    "''Não há luz no fim do túnel, apenas mais escuridão.''",
-    "''A cada passo em frente, você dá dois passos para trás.''",
-    "''O otimismo é apenas uma ilusão temporária antes da queda.''",
-    "''Nada é impossível, exceto para você.''",
-    "''Se você nunca tentar, nunca terá que lidar com o fracasso constante.''",
-    "''A esperança é apenas um desperdício de tempo.''",
-    "''O sucesso é para os sortudos, não para os esforçados.''",
-    "''A mediocridade é o único objetivo alcançável.''",
-    "''A ambição só leva à decepção.''",
-    "''Pensar positivo só atrai mais negatividade.''",
-    "''Nada é digno de celebração, então por que se importar?''",
-    "''Cada novo dia é apenas mais um dia de desgraça.''",
-    "''Você nasceu para pagar contas e morrer.''",
-    "''A vida é um ciclo interminável de desapontamento.''",
-    "''O universo está conspirando contra você.''",
-    "''Apenas abandone, porque você nunca vai conseguir.''",
-    "''Por que fazer hoje o que você pode fazer amanhã ''",
+  '"O sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert Collier',
+'"Acredite em si mesmo e tudo será possível." - Chantal Sutherland',
+'"O único modo de fazer um excelente trabalho é amar o que você faz." - Steve Jobs',
+'"A vida é 10% o que acontece conosco e 90% como reagimos a isso." - Charles R. Swindoll',
+'"A persistência é o caminho do êxito." - Charlie Chaplin',
+'"O fracasso é apenas a oportunidade de começar de novo, desta vez de forma mais inteligente." - Henry Ford',
+'"A verdadeira medida de sucesso não é o que você conquista, mas o quanto você inspira os outros com suas conquistas." - Zig Ziglar'
 ];
 
   const [frase, setFrase] = useState("");
@@ -53,7 +39,7 @@ const App = () => {
       ) : null}
       <TouchableOpacity
         onPress={quebrarBiscoito}
-        style={[styles.botao, { backgroundColor: quebrado ? "gray" : "#f17ea1" }]}
+        style={[styles.botao, { backgroundColor: quebrado ? "black" : "green" }]}
         disabled={quebrado}
       >
         <Text style={{ color: "white" }}>
@@ -63,7 +49,7 @@ const App = () => {
 
       <TouchableOpacity
         onPress={reiniciarBiscoito}
-        style={[styles.botao, { backgroundColor: quebrado ? "#f17ea1" : "gray" }]}
+        style={[styles.botao, { backgroundColor: quebrado ? "green" : "black" }]}
         disabled={!quebrado}
       >
         <Text style={{ color: "white" }}>
@@ -77,7 +63,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "pink",
+    backgroundColor: "white",
     justifyContent: "center",
     alignItems: "center",
   },
