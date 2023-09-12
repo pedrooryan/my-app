@@ -1,22 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import NumeroAleatorio from 'my-app/components/NumeroAleatorio';
 
 export default function ParOuImpar(props) {
+  const min = 1;
+  const max = 100;
+  const numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
 
-    const numero = props.numero
-    let resultado = ''
+  const resultado = numeroAleatorio % 2 === 0 ? 'par' : 'ímpar';
 
-    if (numero % 2 == 0){
-        resultado = 'Par'
-    } else {
-        resultado = 'Impar'
-    }
-  return (
-    <View>
-      <Text style ={{fontSize: 30}}>O número {numero} é:</Text>
-      <Text style ={{fontSize: 30}}>{resultado}</Text>
-    </View>
-  )
+    return (
+        <View>
+            <Text style={{ fontSize: 30 }}>O numero {numeroAleatorio} é: </Text>
+            <Text style={{ color: numeroAleatorio % 2 === 0 ? 'blue' : 'red', fontSize: 30 }}>{numeroAleatorio % 2 === 0 ? 'Par' : 'Impar' }</Text>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({})

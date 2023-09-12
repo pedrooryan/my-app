@@ -1,12 +1,10 @@
-import React from "react";
-import { Text } from "react-native";
+import { Text } from "react-native"
 
 export default function MinMax(props) {
+
     const { min, max } = props;
 
-    const maxValue = Math.max(parseInt(min), parseInt(max));
-
     return (
-        <Text>O valor máximo é: {maxValue}</Text>
-    );
+        <Text>{max} é maior que {min}</Text>
+    )
 }

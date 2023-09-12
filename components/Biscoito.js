@@ -32,7 +32,7 @@ const App = () => {
     <View style={styles.container}>
       <Image
         style={styles.img}
-        source={quebrado ? require("./assets/biscoito-aberto.png") : require("./assets/biscoito-fechado.png")}
+        source={quebrado ? require("my-app/assets/biscoito-aberto.png") : require("my-app/assets/biscoito-fechado.png")}
       />
       {frase ? (
         <Text style={styles.textofrases}>{frase}</Text>
