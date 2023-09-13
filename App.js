@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import ParOuImpar from './components/ParOuImpar';
+import Cronometro from './components/Cronometro';
 import Profile from './components/Profile';
 import Biscoito from './components/Biscoito';
 import MinMax from './components/MinMax';
@@ -16,7 +17,7 @@ const max = 100;
     <View style={styles.container}>
       {/* <NumeroAleatorio min={min} max={max} /> */}
       {/*<MinMax min={min} max={max}/> */}
-      <Biscoito/>
+      <Cronometro/>
     </View>
   );
 }
