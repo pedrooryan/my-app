@@ -6,7 +6,6 @@ export default function Cronometro(props) {
     const [time, setTime] = useState({ hours: 0, minutes: 0, seconds: 0 });
     const [active, setActive] = useState(false);
     const [history, setHistory] = useState([]);
-    // const [off, setOff] = useState(false);
 
     useEffect(() => {
         let interval;
@@ -22,7 +21,7 @@ export default function Cronometro(props) {
 
                     return { hours, minutes, seconds };
                 });
-            }, 1000);
+            }, 800);
         } else {
             clearInterval(interval);
         }
@@ -44,11 +43,6 @@ export default function Cronometro(props) {
         setHistory([])
     }
 
-    // const switchOff = () => {
-    //     setOff(false)
-    // }
-
-    // const formattedTime = `${String(time.hours).padStart(2, '0')}:${String(time.minutes).padStart(2, '0')}:${String(time.seconds).padStart(2, '0')}`; ormattedTime = `${String(time.hours).padStart(2, '0')}:${String(time.minutes).padStart(2, '0')}:${String(time.seconds).padStart(2, '0')}`;
     const formattedTime = `${String(time.hours).padStart(2, '0')}:${String(time.minutes).padStart(2, '0')}:${String(time.seconds).padStart(2, '0')}`;
 
     return (
@@ -90,17 +84,12 @@ export default function Cronometro(props) {
 
 const styles = StyleSheet.create({
     Complete: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 50,
-        marginVertical: 70
+        gap: 20,
     },
 
     T1: {
-        justifyContent: 'center',
-        alignItems: 'center',
         gap: 30,
-        backgroundColor: 'white',
+        backgroundColor: '#2F4F4F',
     },
 
     Image: {
@@ -110,23 +99,19 @@ const styles = StyleSheet.create({
 
     Timer1: {
         alignItems: 'center',
-        paddingVertical: 5,
-        width: 260,
     },
 
     textTimer: {
-    fontSize: 40,
-    color: 'black',
+    fontSize: 50,
+    color: 'white',
     },
 
     viewButton: {
         flexDirection: 'row',
-        gap: 20
+        gap: 30
     },
 
     Button: {
-        alignItems: "center",
-        justifyContent: 'center',
         padding: 5,
         width: 75,
         height: 50,
@@ -143,22 +128,20 @@ const styles = StyleSheet.create({
     buttonText: {
         fontSize: 22,
         textAlign: 'center',
-        color: 'black'
+        color: 'white'
     },
 
     Equal: {
         borderRadius: 10,
         borderWidth: 2,
-        borderColor: 'gray'
+        borderColor: 'white'
     },
 
     T2: {
-        flex: 1,
-        backgroundColor: 'white',
+        backgroundColor: '#2F4F4F',
     },
 
     Scroll: {
-        padding: 10,
         width: 280,
         maxHeight: 200
     },

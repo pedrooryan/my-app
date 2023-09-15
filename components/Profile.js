@@ -52,27 +52,27 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'white',
         margin: 20
     }, img: {
         width: 250,
         height: 250,
         borderWidth: 2,
-        borderColor: 'gray',
-        borderRadius: 500,
+        borderColor: 'black',
+        borderRadius: 40,
         padding: 20
     },
     labelContainer: {
-        flexDirection: 'column',
+        flexDirection: '',
         alignItems: 'center',
         width: '100%',
         padding: 15
     },
     texto: {
+        color: '#F5DEB3',
         fontSize: 20
     },
     textoLabel: {
-        color: 'gray',
+        color: 'white',
         fontWeight: 'bold'
     }
 })

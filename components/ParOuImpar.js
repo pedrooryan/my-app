@@ -11,8 +11,9 @@ export default function ParOuImpar(props) {
 
     return (
         <View>
-            <Text style={{ fontSize: 30 }}>O numero {numeroAleatorio} é: </Text>
-            <Text style={{ color: numeroAleatorio % 2 === 0 ? 'blue' : 'red', fontSize: 30 }}>{numeroAleatorio % 2 === 0 ? 'Par' : 'Impar' }</Text>
+            <Text style={{ fontSize: 30, color: 'white' }}>O numero {numeroAleatorio} é: </Text>
+            <Text style={{ color: numeroAleatorio % 2 === 0 ? 'yellow' : '#B0E0E6', 
+            fontSize: 30 }}>{numeroAleatorio % 2 === 0 ? 'Par' : 'Impar' }</Text>
         </View>
     )
 }

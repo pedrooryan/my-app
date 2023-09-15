@@ -5,6 +5,6 @@ export default function MinMax(props) {
     const { min, max } = props;
 
     return (
-        <Text>{max} é maior que {min}</Text>
+        <Text style={{ fontSize: 30, color:'white' }}>{max} é maior que {min}</Text>
     )
 }

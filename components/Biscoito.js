@@ -39,7 +39,7 @@ const App = () => {
       ) : null}
       <TouchableOpacity
         onPress={quebrarBiscoito}
-        style={[styles.botao, { backgroundColor: quebrado ? "black" : "green" }]}
+        style={[styles.botao, { backgroundColor: quebrado ? "gray" : "#00008B" }]}
         disabled={quebrado}
       >
         <Text style={{ color: "white" }}>
@@ -49,7 +49,7 @@ const App = () => {
 
       <TouchableOpacity
         onPress={reiniciarBiscoito}
-        style={[styles.botao, { backgroundColor: quebrado ? "green" : "black" }]}
+        style={[styles.botao, { backgroundColor: quebrado ? "#00008B" : "gray" }]}
         disabled={!quebrado}
       >
         <Text style={{ color: "white" }}>
@@ -62,29 +62,22 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "white",
     justifyContent: "center",
     alignItems: "center",
   },
   
   textofrases: {
     fontSize: 20,
-    fontStyle: "italic",
-    color: "black",
+    color: "white",
     justifyContent: "center",
     alignItems: "center",
   },
 
-  img: {
-    marginTop: 100,
-  },
-
   botao: {
-    marginTop: 50,
-    padding: 10,
-    borderRadius: 20,
-    width: 200, 
+    marginTop: 40,
+    padding: 15,
+    borderRadius: 30,
+    width: 250, 
     alignItems: "center",
   },
 });

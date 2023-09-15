@@ -15,8 +15,11 @@ const max = 100;
 
   return (
     <View style={styles.container}>
+      {/* <MinMax min={min} max={max}/> */}
       {/* <NumeroAleatorio min={min} max={max} /> */}
-      {/*<MinMax min={min} max={max}/> */}
+      {/* <ParOuImpar/> */}
+      {/* <Profile/> */}
+      {/* <Biscoito/> */}
       <Cronometro/>
     </View>
   );
@@ -25,7 +28,7 @@ const max = 100;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#2F4F4F',
     alignItems: 'center',
     justifyContent: 'center',
   },
