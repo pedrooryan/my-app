@@ -9,7 +9,7 @@ import NumeroAleatorio from './components/NumeroAleatorio';
 
 export default function App() {
 
-const min = 0;
+const min = 1;
 const max = 100;
 
 
