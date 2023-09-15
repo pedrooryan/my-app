@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import ParOuImpar from './components/ParOuImpar';
-import Cronometro from './components/Cronometro';
-import Profile from './components/Profile';
-import Biscoito from './components/Biscoito';
 import MinMax from './components/MinMax';
 import NumeroAleatorio from './components/NumeroAleatorio';
+import ParOuImpar from './components/ParOuImpar';
+import Profile from './components/Profile';
+import Biscoito from './components/Biscoito';
+import Cronometro from './components/Cronometro';
 
 export default function App() {
 
